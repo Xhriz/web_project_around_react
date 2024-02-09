@@ -24,7 +24,7 @@ function Main({
   const [userAvatar, setUserAvatar] = React.useState("");
   const [cards, setCards] = React.useState([]);
 
-  React.useEffect(() => {
+  function getUserData() {
     api
       .getUserInfo()
       .then((userInfo) => {
@@ -35,7 +35,8 @@ function Main({
       .catch((error) => {
         console.error(error);
       });
-
+  }
+  function getCardData() {
     api
       .getInitialCards()
       .then((initialCards) => {
@@ -44,6 +45,11 @@ function Main({
       .catch((error) => {
         console.error(error);
       });
+  }
+
+  React.useEffect(() => {
+    getUserData();
+    getCardData();
   }, []);
 
   return (

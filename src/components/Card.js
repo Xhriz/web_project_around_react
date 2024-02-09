@@ -16,7 +16,7 @@ function Card(props) {
       <img
         className="elements__image"
         src={props.link}
-        alt="imagem do card"
+        alt={props.name}
         onClick={handleClick}
       />
       <div className="elements__text">
