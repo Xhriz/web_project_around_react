@@ -102,13 +102,13 @@
     justify-content: center;
   }
   .profile__button-add {
+    margin-left: 0;
+  }
+  .profile__button-add {
     margin-top: 20px;
   }
   .profile__overlay-photo {
     left: 28%;
-  }
-  .profile__button-add {
-    margin-left: 0;
   }
 }
 @media screen and (max-width: 548px) {
