@@ -49,6 +49,7 @@
   border: none;
   margin: 0;
   padding: 0;
+  height: 19px;
 }
 .elements__button-like_click {
   background-image: url(../images/likeactive.png);

@@ -34,8 +34,8 @@ class Api extends React.Component {
       method: "PATCH",
       headers: this._headers,
       body: JSON.stringify({
-        name: name.value,
-        about: about.value,
+        name: name,
+        about: about,
       }),
     }).then((res) => {
       if (res.ok) {
@@ -97,6 +97,13 @@ class Api extends React.Component {
 
       return Promise.reject(`Error: ${res.status}`);
     });
+  }
+
+  changeLikeCardStatus(cardId, isLiked) {
+    if (isLiked) {
+      return this.addLikes(cardId);
+    }
+    return this.removeLikes(cardId);
   }
 
   removeCard(cardId) {
