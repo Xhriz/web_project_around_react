@@ -6,7 +6,7 @@ import EditProfilePopup from "./EditProfilePopup.js";
 import EditAvatarPopup from "./EditAvatarPopup.js";
 import AddPlacePopupOpen from "./AddPlacePopup.js";
 import ConfirmDeletePopup from "./ConfirmDeletePopup.js";
-import { api } from "../utils/api";
+import api from "../utils/api";
 import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
 
 function App() {

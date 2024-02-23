@@ -119,10 +119,12 @@ class Api extends React.Component {
   }
 }
 
-export const api = new Api({
+const api = new Api({
   baseUrl: "https://around.nomoreparties.co/v1/web_ptbr_08",
   headers: {
     authorization: "b469dc0c-ae24-443f-a0e8-f771ca7b4117",
     "Content-Type": "application/json",
   },
 });
+
+export default api;
