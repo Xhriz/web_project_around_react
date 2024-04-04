@@ -6,5 +6,5 @@ Para o desenvolvimento desse projeto foi usado tecnologias como: HTML, CSS, Java
 ## Funcionalidades:
 Nesse projeto temos funcionalidades como: Alteração do nome e trabalho no perfil, alteração da foto de perfil, postagem e exclusão das proprias fotos, botao de curtir e descurtir fotos.
 ## Link para a página:
-(https://xhriz.github.io/web_project_around_react/) 
+![EUA Afora React](https://xhriz.github.io/web_project_around_react/) 
 
